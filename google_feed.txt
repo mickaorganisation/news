@@ -1,0 +1,4 @@
+http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=
+
+
+//pour transformer flux rss en json

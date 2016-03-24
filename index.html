@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+    <!--Mon script-->
+    <script src="js/news.js"></script>
+
+
+    <title>Projet news</title>
+</head>
+<body>
+<p>Hello</p>
+
+<div data-role="page" id="home">
+
+    <div data-role="header">
+        <h1>News</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <label>Flux RSS</label>
+        <select id="flux_rss"></select>
+        <div id="articles"></div>
+        <p>Notre contenu</p>
+    </div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed" data-id="footer" data-theme="a" >
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Accueil</a></li>
+                <li><a href="#add" data-icon="plus" data-transition="slide">ajouter</a></li>
+                <li><a href="#about" data-icon="gear" data-transition="slide">A propos</a></li>
+            </ul>
+            </div><!-- /navbar -->
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+
+<div data-role="page" id="add">
+
+    <div data-role="header">
+        <h1>News</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <p>Notre contenu 2 </p>
+        <label>Flux Titre: </label>
+        <input type="text" id="flux_titre : " value="" />
+        <label>Flux URL : </label>
+        <input type="text" id="flux_url : " value="" />
+        <br />
+        <button class="ui-btn ui-icon-plus ui-btn-icon-right" id="btn _add">Ajouter</button>
+    </div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed" data-id="footer" data-theme="a">
+         <div data-role="navbar" >
+            <ul>
+                <li><a href="#home" data-icon="home" data-direction="reverse" data-transition="slide">Accueil</a></li>
+                <li><a href="#add" data-icon="plus"  class="ui-btn-active ui-state-persist" >ajouter</a></li>
+                <li><a href="#about" data-icon="gear" data-transition="slide">A propos</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+
+<div data-role="page" id="about" >
+
+    <div data-role="header" >
+        <h1>News</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content" >
+        <p>Notre contenu 3</p>
+    </div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed" data-id="footer" data-theme="a">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-icon="home"  data-direction="reverse" data-transition="slide">Accueil</a></li>
+                <li><a href="#add" data-icon="plus" data-direction="reverse" data-transition="slide">ajouter</a></li>
+                <li><a href="#about" data-icon="gear"  class="ui-btn-active ui-state-persist">A propos</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
+
+
+
